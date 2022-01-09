@@ -5,3 +5,28 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+}
+
+.daniel {
+  grid-area: daniel;
+}
+.jonathan {
+  grid-area: jonathan;
+}
+.jeanette {
+  grid-area: jeanette;
+}
+.patrick {
+  grid-area: patrick;
+}
+.kira {
+  grid-area: kira;
+}
