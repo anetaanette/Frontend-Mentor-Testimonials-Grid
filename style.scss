@@ -1,12 +1,20 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+
 body {
   max-width: 1440px;
+  font-family: "Barlow Semi Condensed", sans-serif;
   color: hsl(0, 0%, 100%);
   background-color: hsl(210, 46%, 95%);
+  width: 80%;
+  margin: 10% auto;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(217, 19%, 35%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -23,17 +31,27 @@ body {
 }
 .img {
   border-radius: 50%;
+  margin-left: 10px;
 }
 .flex {
   display: flex;
   gap: 20px;
 }
+h4 {
+  font-weight: 600;
+}
 p {
-  color: hsl(0, 0%, 81%);
+  opacity: 70%;
 }
 .box {
   border-radius: 20px;
   padding: 10px;
+}
+.verif {
+  opacity: 50%;
+}
+.column {
+  margin-top: 20px;
 }
 .daniel {
   grid-area: daniel;
@@ -49,7 +67,7 @@ p {
 .jeanette {
   grid-area: jeanette;
   background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 81%);
+  color: hsl(217, 19%, 35%);
 }
 .patrick {
   grid-area: patrick;
@@ -58,5 +76,5 @@ p {
 .kira {
   grid-area: kira;
   background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 81%);
+  color: hsl(217, 19%, 35%);
 }

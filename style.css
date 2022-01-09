@@ -1,12 +1,19 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
 body {
   max-width: 1440px;
+  font-family: "Barlow Semi Condensed", sans-serif;
   color: white;
   background-color: #ecf2f8;
+  width: 80%;
+  margin: 10% auto;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #48556a;
 }
 
 .attribution a {
@@ -26,6 +33,7 @@ body {
 
 .img {
   border-radius: 50%;
+  margin-left: 10px;
 }
 
 .flex {
@@ -35,13 +43,25 @@ body {
   gap: 20px;
 }
 
+h4 {
+  font-weight: 600;
+}
+
 p {
-  color: #cfcfcf;
+  opacity: 70%;
 }
 
 .box {
   border-radius: 20px;
   padding: 10px;
+}
+
+.verif {
+  opacity: 50%;
+}
+
+.column {
+  margin-top: 20px;
 }
 
 .daniel {
@@ -67,7 +87,7 @@ p {
   -ms-grid-column: 1;
   grid-area: jeanette;
   background-color: white;
-  color: #cfcfcf;
+  color: #48556a;
 }
 
 .patrick {
@@ -84,6 +104,6 @@ p {
   -ms-grid-column: 4;
   grid-area: kira;
   background-color: white;
-  color: #cfcfcf;
+  color: #48556a;
 }
 /*# sourceMappingURL=style.css.map */
