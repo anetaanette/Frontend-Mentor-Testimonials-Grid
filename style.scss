@@ -1,3 +1,9 @@
+body {
+  max-width: 1440px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(210, 46%, 95%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -8,25 +14,49 @@
 
 .grid {
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
 }
-
+.img {
+  border-radius: 50%;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+}
+p {
+  color: hsl(0, 0%, 81%);
+}
+.box {
+  border-radius: 20px;
+  padding: 10px;
+}
 .daniel {
   grid-area: daniel;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 70% 0%;
 }
 .jonathan {
   grid-area: jonathan;
+  background-color: hsl(217, 19%, 35%);
 }
 .jeanette {
   grid-area: jeanette;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 81%);
 }
 .patrick {
   grid-area: patrick;
+  background-color: hsl(219, 29%, 14%);
 }
 .kira {
   grid-area: kira;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 81%);
 }
