@@ -31,6 +31,15 @@ body {
       grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
 }
 
+@media only screen and (max-width: 375px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
+}
+
 .img {
   border-radius: 50%;
   margin-left: 10px;
