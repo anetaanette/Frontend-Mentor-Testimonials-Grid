@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![alt text](http://url/to/screenshot.png)
+![screenshot](https://github.com/anetaanette/Frontend-Mentor-Testimonials-Grid)
 
 ### Links
 
