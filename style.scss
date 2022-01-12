@@ -6,9 +6,9 @@ body {
   color: hsl(0, 0%, 100%);
   background-color: hsl(210, 46%, 95%);
   width: 80%;
-  margin: 10% auto;
   font-weight: 500;
   font-size: 13px;
+  margin: 10% auto;
 }
 
 .attribution {
@@ -28,11 +28,8 @@ body {
   grid-template-areas:
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
-  @media only screen and (max-width: 375px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-  }
 }
+
 .img {
   border-radius: 50%;
   margin-left: 10px;
@@ -50,6 +47,7 @@ p {
 .box {
   border-radius: 20px;
   padding: 10px;
+  box-shadow: 0 0 15px #bbb;
 }
 .verif {
   opacity: 50%;
@@ -81,4 +79,29 @@ p {
   grid-area: kira;
   background-color: hsl(0, 0%, 100%);
   color: hsl(217, 19%, 35%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .box {
+    width: 300px;
+  }
+  .daniel {
+    grid-area: 1/1/2/2;
+  }
+  .jonathan {
+    grid-area: 2/1/3/2;
+  }
+  .jeanette {
+    grid-area: 3/1/4/2;
+  }
+  .patrick {
+    grid-area: 4/1/5/2;
+  }
+  .kira {
+    grid-area: 5/1/6/2;
+  }
 }
